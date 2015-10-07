@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/innerRelative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomLayout">
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:text="@string/workout"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:textSize="@dimen/abc_text_size_display_1_material"/>
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_routines"
+            android:textColor="@color/blue"
+            android:textSize="20dp"
+            android:layout_below="@+id/textview1"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="@dimen/abc_action_bar_default_height_material"
+            />
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/public_routines"
+            android:textColor="@color/blue"
+            android:textSize="20dp"
+            android:layout_below="@+id/textview1"
+            android:layout_toRightOf="@+id/textview2"
+            android:layout_toEndOf="@+id/textview2"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="@dimen/abc_action_bar_default_height_material"
+            />
+
+        <ListView
+            android:id="@+id/listview1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textview2"
+            android:layout_margin="30dp"
+            >
+        </ListView>
+        <ListView
+            android:id="@+id/listview2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="30dp"
+            android:layout_below="@+id/textview3"
+            >
+        </ListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wingit"
+            android:textSize="20dp"
+            android:textColor="@color/blue"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            />
+        <Button
+            android:id="@+id/custom_session"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/blue"
+            android:text="@string/custom"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textview4"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="40dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
