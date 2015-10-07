@@ -35,7 +35,6 @@ public class CreateRoutine extends AppCompatActivity {
     }
 
     //Set Groups
-
     public void setGroups(View view) {
         //Set the Number of Exercise Groups you want to create in this routine
 
@@ -89,7 +88,7 @@ public class CreateRoutine extends AppCompatActivity {
         */
 
         //Back to menu
-        Toast.makeText(this, "Add not successful.", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Nothing was added.", Toast.LENGTH_LONG).show();
         CreateRoutine.this.finish();
 
     }

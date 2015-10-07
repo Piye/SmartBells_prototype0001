@@ -15,8 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- ACTIVITIES -->
         <activity android:name=".CreateRoutine"/>
         <activity android:name=".CreateCustomSession"/>
+        <activity android:name=".CreateExercise"/>
 
     </application>
 

@@ -31,12 +31,12 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Name:"
-            android:id="@+id/nameTextView"
+            android:id="@+id/exNameTextView"
             android:layout_margin="2dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editNameText2"
+            android:id="@+id/editExNameText"
             android:layout_weight="1" />
     </LinearLayout>
 
@@ -81,7 +81,7 @@
             android:layout_gravity="center"
             android:text="Cancel"
             android:layout_weight=".5"
-            android:onClick="cancel"/>
+            android:onClick="cancelCreateExercise"/>
 
     </LinearLayout>
 

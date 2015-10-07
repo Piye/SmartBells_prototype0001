@@ -23,7 +23,6 @@ public class SmartBellsMainActivity extends AppCompatActivity{
                 SmartBellsMainActivity.this));
 
         SlidingTabLayout slidingTabLayout = (SlidingTabLayout) findViewById(R.id.sliding_tabs);
-
         slidingTabLayout.setViewPager(viewpager);
 
     }
